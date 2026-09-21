@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiliann Chevanche — Portfolio</title>
+  <meta name="description" content="Portfolio de Kiliann Chevanche — projets scolaires en design et développement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;0,800;0,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#accueil" class="nav__brand">Kiliann<span class="dot">.</span></a>
+    <nav class="nav__links" data-nav-links>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" data-nav-toggle aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <section class="hero" id="accueil">
+    <span class="hero__blob hero__blob--blue"></span>
+    <span class="hero__blob hero__blob--coral"></span>
+
+    <p class="hero__label">Bienvenue sur mon</p>
+    <h1 class="hero__title display">
+      <span class="hero__title-outline" aria-hidden="true">PORTFOLIO</span>
+      <span class="hero__title-fill">PORTFOL<span class="accent">IO</span></span>
+    </h1>
+
+    <div class="hero__meta">
+      <span class="hero__name">Kiliann Chevanche</span>
+      <span class="hero__role">Étudiant en Design Graphique</span>
+    </div>
+
+    <div class="hero__badge" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <defs>
+          <path id="badgeCircle" d="M60,10 a50,50 0 1,1 -0.1,0" />
+        </defs>
+        <circle cx="60" cy="60" r="50" fill="none" stroke="#16171B" stroke-opacity="0.25" stroke-dasharray="2 6" />
+        <text font-size="9.5" font-weight="700" letter-spacing="1" fill="#16171B">
+          <textPath href="#badgeCircle" startOffset="0%">PORTFOLIO • PORTFOLIO • </textPath>
+        </text>
+      </svg>
+      <span class="hero__badge-dot"></span>
+    </div>
+
+    <a href="#projets" class="hero__scroll">Voir mes projets ↓</a>
+  </section>
+
+  <section class="about" id="apropos">
+    <div class="about__photo" data-reveal>
+      <img src="assets/profile/kiliann.jpg" alt="Portrait de Kiliann Chevanche" />
+    </div>
+    <div>
+      <p class="eyebrow">À propos</p>
+      <h2 class="display" data-reveal>Salut, moi c'est Kiliann</h2>
+      <p data-reveal>
+        Actuellement en 3<sup>e</sup> année de bachelor communication visuelle et web, je suis à la recherche
+        d'une alternance ou d'un stage afin d'obtenir mon diplôme.
+      </p>
+      <p data-reveal>
+        Motivé et passionné, je saurai mettre mes compétences au service de votre agence de communication.
+      </p>
+      <ul class="skills" data-reveal>
+        <li>Figma</li>
+        <li>Illustrator</li>
+        <li>Photoshop</li>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>After Effects</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects" id="projets">
+    <div class="projects-head">
+      <div>
+        <p class="eyebrow">Sélection</p>
+        <h2 class="display">Mes projets</h2>
+      </div>
+      <div class="carousel-arrows">
+        <button data-carousel-prev aria-label="Projet précédent">‹</button>
+        <span class="carousel-count" data-carousel-count></span>
+        <button data-carousel-next aria-label="Projet suivant">›</button>
+      </div>
+    </div>
+    <div class="projects-swiper swiper">
+      <div class="swiper-wrapper" data-carousel-track></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2 class="display">Discutons de ton prochain projet</h2>
+    <p>Une question, une opportunité, envie d'échanger ? Écris-moi ou retrouve-moi ici.</p>
+    <div class="contact-buttons">
+      <button type="button" data-instagram>Instagram</button>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:ton.email@example.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Kiliann Chevanche</span>
+  </footer>
+
+  <script src="js/projects-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
